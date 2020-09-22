@@ -37,5 +37,5 @@ none
 
 For more information please contact Kerem Karaman.
 
-https://img.shields.io/github/last-commit/KKaraman/readMeGenerator?style=plastic
+<https://img.shields.io/github/last-commit/KKaraman/readMeGenerator?style=plastic>
 
