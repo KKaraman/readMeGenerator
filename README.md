@@ -1,9 +1,9 @@
 
-# **readmegenerator**
+# **readMeGenerator**
 
 #### **Description:**
 
-generate readme
+it makes awesome readme files
 
 #### **Table of Contents:**
 
@@ -12,19 +12,19 @@ generate readme
 - [License](#License)
 - [Contributors](#Contributors)
 - [Tests](#Tests)
-- [Contact Information](#Contact)
+- [Questions](#Questions)
 
 ## Installation
 
-none
+run "node index.js" at the terminal
 
 ## Usage
 
-create a readme for any project
+to create a readme file for every repository that you create
 
 ## License
 
-nonw
+none
 
 ## Contributors
 
@@ -33,9 +33,12 @@ none
 ## Tests
 
 
-## Contact Information
+## Questions
 
-For more information please contact Kerem Karaman.
+For more information please contact me at [mailto](keremukaraman@gmail.com).
 
-![commit day](https://img.shields.io/github/last-commit/KKaraman/readMeGenerator?style=plastic)
+You can visit my GitHub profile at [GitHub](https://github.com/KKaraman)
+
+![Commit Day](https://img.shields.io/github/last-commit/KKaraman/readMeGenerator?style=plastic)
+
 
