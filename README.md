@@ -1,9 +1,9 @@
 
-# **kjsdef**
+# **readmegenerator**
 
 #### **Description:**
 
-lkdsfj
+generate readme
 
 #### **Table of Contents:**
 
@@ -16,19 +16,19 @@ lkdsfj
 
 ## Installation
 
-sdlkfj
+none
 
 ## Usage
 
-lksdfgj
+create a readme for any project
 
 ## License
 
-lkdsjf
+nonw
 
 ## Contributors
 
-alkdfj
+none
 
 ## Tests
 
@@ -37,5 +37,5 @@ alkdfj
 
 For more information please contact Kerem Karaman.
 
-https://img.shields.io/visual-studio-marketplace/last-updated/September%202020?style=flat-square
+https://img.shields.io/github/last-commit/KKaraman/readMeGenerator?style=plastic
 
