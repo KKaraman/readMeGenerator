@@ -1,5 +1,5 @@
 
-# **Test**
+# **test**
 
 #### **Description:**
 
@@ -12,7 +12,7 @@ test
 - [License](#License)
 - [Contributors](#Contributors)
 - [Tests](#Tests)
-- [Contact](#Contact Information)
+- [Contact Information](#Contact)
 
 ## Installation
 
@@ -20,7 +20,7 @@ none
 
 ## Usage
 
-test
+none
 
 ## License
 
@@ -33,7 +33,7 @@ none
 ## Tests
 
 
-## Contact
+## Contact Information
 
 For more information please contact Kerem Karaman.
 
