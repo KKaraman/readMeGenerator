@@ -35,9 +35,9 @@ none
 
 ## Questions
 
-For more information please contact me at [mailto](keremukaraman@gmail.com).
+For more information please contact me using [email](keremukaraman@gmail.com).
 
-You can visit my GitHub profile at [GitHub](https://github.com/KKaraman)
+You can visit my [GitHub profile](https://github.com/KKaraman)
 
 ![Commit Day](https://img.shields.io/github/last-commit/KKaraman/readMeGenerator?style=plastic)
 
