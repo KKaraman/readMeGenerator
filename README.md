@@ -3,7 +3,7 @@
 
 #### **Description:**
 
-it generates awesome ReadMe files
+it makes awesome readme files
 
 #### **Table of Contents:**
 
@@ -16,11 +16,11 @@ it generates awesome ReadMe files
 
 ## Installation
 
-run "node index.js" at the terminal window
+run "node index.js" at the terminal
 
 ## Usage
 
-Everytime you create a new repo, use this file to generate ReadMe files.
+to create a readme file for every repository that you create
 
 ## License
 
