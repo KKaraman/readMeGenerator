@@ -5,6 +5,7 @@ const util = require("util");
 // const Choices = require("inquirer/lib/objects/choices");
 let licenseChoices = ["None", "NPM"];
 let licenseShieldURL = "";
+let userRepoCount = 0;
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
@@ -124,6 +125,19 @@ function generateShieldURL(answers){
     // console.log(licenseShieldURL);
 }
 
+function getRepoCount(answers){
+    const queryUrl = `https://api.github.com/users/${answers.github}/repos?per_page=100`;
+
+    axios.get(queryUrl).then(function ({ data }) {
+        const repoNames = data.map(function (repo) {
+        userRepoCount++;
+        return repo.name;
+
+      });
+          
+      console.log(`${repoNames.length} repos`);
+})
+}
 
 function generateReadMe(answers) {
   
@@ -154,7 +168,7 @@ ${answers.usage}
 
 ## License
 
-${answers.license}
+This code is covered under the ${answers.license} license.
 
 ## Contributors
 
@@ -168,7 +182,7 @@ ${answers.testing}
 
 For more information please contact me using my [email](${answers.email}).
 
-If you liked this, you can find more of my work at my [GitHub profile](https://github.com/${answers.github})
+If you liked this, you can my other ${userRepoCount} repositories at my [GitHub profile](https://github.com/${answers.github})
 
 ![Commit Day](https://img.shields.io/github/last-commit/KKaraman/readMeGenerator?style=plastic)
 
@@ -180,7 +194,7 @@ async function init() {
   try {
     const answers = await promptUser();
     generateShieldURL(answers);
-
+    getRepoCount(answers);
     const file = generateReadMe(answers);
 
     await writeFileAsync("README.md", file);
