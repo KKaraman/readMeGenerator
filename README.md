@@ -1,6 +1,6 @@
 
 # **fdg**
-![PyPI - License](https://img.shields.io/pypi/l/sdf)
+![Hex.pm](https://img.shields.io/hexpm/l/gdfh)
 
 #### **Description:**
 
