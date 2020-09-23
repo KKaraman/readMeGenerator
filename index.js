@@ -68,7 +68,7 @@ function promptUser() {
     {
       type: "input",
       name: "contributor",
-      message: "Who are the other contributors to this code?",
+      message: "Who are the contributors to this code?",
       validate: function (answer) {
         if (answer==="") {
           return 'If None, please type None!';
@@ -126,21 +126,22 @@ function generateShieldURL(answers){
 }
 
 function getRepoCount(answers){
+    console.log("counting repos");
     const queryUrl = `https://api.github.com/users/${answers.github}/repos?per_page=100`;
 
     axios.get(queryUrl).then(function ({ data }) {
         const repoNames = data.map(function (repo) {
         userRepoCount++;
-        return repo.name;
+        return;
 
       });
           
-      console.log(`${repoNames.length} repos`);
+      console.log(`${answers.github} has ${userRepoCount} repositories in github`);
+      return repoNames.length;
 })
 }
 
 function generateReadMe(answers) {
-  
   return `
 # **${answers.name}**
 ${licenseShieldURL}
@@ -182,7 +183,7 @@ ${answers.testing}
 
 For more information please contact me using my [email](${answers.email}).
 
-If you liked this, you can my other ${userRepoCount} repositories at my [GitHub profile](https://github.com/${answers.github})
+If you liked this, you can see my other repositories at my [GitHub profile](https://github.com/${answers.github})
 
 ![Commit Day](https://img.shields.io/github/last-commit/KKaraman/readMeGenerator?style=plastic)
 
