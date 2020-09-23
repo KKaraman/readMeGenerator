@@ -4,7 +4,7 @@
 
 #### **Description:**
 
-it uses inquire to prompt information from the user and create a ReadMe file for the repository.
+This code uses inquirer to generate ReadMe files.
 
 #### **Table of Contents:**
 
@@ -17,11 +17,11 @@ it uses inquire to prompt information from the user and create a ReadMe file for
 
 ## Installation
 
-You have to install inquirer npm and then run node index.js at the terminal.
+you have to install inquirer and axios and run node index.js in the terminal.
 
 ## Usage
 
-It will be used to create professional readme files when a new repo is created.
+THis code will be used when we create new Repos and need readme Files.
 
 ## License
 
@@ -33,7 +33,7 @@ Kerem Karaman
 
 ## Tests
 
-None at the moment.
+None at this moment.
 
 ## Questions
 
