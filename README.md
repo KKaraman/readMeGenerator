@@ -1,6 +1,6 @@
 
 # **fdg**
-![GitHub last commit](https://img.shields.io/github/last-commit/KKaraman/readMeGenerator?style=plastic)
+![GitHub](https://img.shields.io/github/license/kkaraman/readMeGenerator)
 
 #### **Description:**
 
