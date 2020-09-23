@@ -1,14 +1,10 @@
 
-<<<<<<< HEAD
 # **readMeGenerator**
-=======
-# **fdg**
->>>>>>> 2ef6712ed8cdb5b0bedcebc954e24546a8c38023
 ![NPM](https://img.shields.io/npm/l/inquirer)
 
 #### **Description:**
 
-create ReadMe files
+This code generates a ReadMe file using the inQuire NPM and typing "node index.js" in your terminal. 
 
 #### **Table of Contents:**
 
@@ -21,11 +17,11 @@ create ReadMe files
 
 ## Installation
 
-npm i and then node index.js
+npm install
 
 ## Usage
 
-generate awesome Readme files for repositories
+This would be used when you want to generate a readMe for a new repository.
 
 ## License
 
