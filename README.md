@@ -4,7 +4,7 @@
 
 #### **Description:**
 
-This code uses inquire and axios npms to create a readMe file for a repository.
+it uses inquire to prompt information from the user and create a ReadMe file for the repository.
 
 #### **Table of Contents:**
 
@@ -17,11 +17,11 @@ This code uses inquire and axios npms to create a readMe file for a repository.
 
 ## Installation
 
-You can install the npms using npm install and run the program by typing "node index.js" at the terminal.
+You have to install inquirer npm and then run node index.js at the terminal.
 
 ## Usage
 
-To generate proper ReadMe files for every repository that you create.
+It will be used to create professional readme files when a new repo is created.
 
 ## License
 
@@ -33,13 +33,13 @@ Kerem Karaman
 
 ## Tests
 
-No tests required.
+None at the moment.
 
 ## Questions
 
 For more information please contact me using my [email](keremukaraman@gmail.com).
 
-If you liked this, you can my other 0 repositories at my [GitHub profile](https://github.com/KKaraman)
+If you liked this, you can see my other repositories at my [GitHub profile](https://github.com/KKaraman)
 
 ![Commit Day](https://img.shields.io/github/last-commit/KKaraman/readMeGenerator?style=plastic)
 
