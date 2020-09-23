@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
 # **readMeGenerator**
+=======
+# **fdg**
+>>>>>>> 2ef6712ed8cdb5b0bedcebc954e24546a8c38023
 ![NPM](https://img.shields.io/npm/l/inquirer)
 
 #### **Description:**
