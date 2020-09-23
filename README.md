@@ -1,6 +1,6 @@
 
 # **fdg**
-![AUR license](https://img.shields.io/aur/license/sdfd)
+![PyPI - License](https://img.shields.io/pypi/l/sdf)
 
 #### **Description:**
 
