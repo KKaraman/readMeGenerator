@@ -1,7 +1,10 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-// const axios = require("axios");
+const axios = require("axios");
 const util = require("util");
+// const Choices = require("inquirer/lib/objects/choices");
+let licenseChoices = ["None", "NPM"];
+let licenseShieldURL = "";
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
@@ -10,93 +13,173 @@ function promptUser() {
     {
       type: "input",
       name: "name",
-      message: "What is the title of your project?"
+      message: "What is the title of your project?",
+      validate: function (answer) {
+        if (answer==="") {
+          return 'You must type something!';
+        }
+
+        return true;
+      }
     },
     {
       type: "input",
       name: "description",
-      message: "What does the code do?"
+      message: "What does the code do?",
+      validate: function (answer) {
+        if (answer==="") {
+          return 'You must type something!';
+        }
+
+        return true;
+      }
     },
     {
       type: "input",
       name: "installation",
-      message: "How do you install the code?"
+      message: "How do you install the code?",
+      validate: function (answer) {
+        if (answer==="") {
+          return 'You must type something!';
+        }
+
+        return true;
+      }
     },
     {
       type: "input",
       name: "usage",
-      message: "What is the expected use for the code?"
+      message: "What is the expected use for the code?",
+      validate: function (answer) {
+        if (answer==="") {
+          return 'You must type something!';
+        }
+
+        return true;
+      }
+    },
+    {
+      type: "list",
+      name: "license",
+      message: "What are the licenses required for this project?",
+      choices: licenseChoices,
+    },
+    {
+      type: "input",
+      name: "contributor",
+      message: "Who are the other contributors to this code?",
+      validate: function (answer) {
+        if (answer==="") {
+          return 'If None, please type None!';
+        }
+
+        return true;
+      }
     },
     {
         type: "input",
-        name: "license",
-        message: "What are the licenses required for this project?"
-    },
-    {
-        type: "input",
-        name: "contributor",
-        message: "Who are the other contributors to this code?"
+        name: "testing",
+        message: "What are the tests that should be run on this code?",
+        validate: function (answer) {
+            if (answer==="") {
+              return 'You must type something!';
+            }
+    
+            return true;
+          }
     },
     {
       type: "input",
       name: "github",
-      message: "what is your GitHub Username?"
+      message: "what is your GitHub Username?",
+      validate: function (answer) {
+        if (answer==="") {
+          return 'You must type something!';
+        }
+
+        return true;
+      }
     },
     {
       type: "input",
-      name: "repository",
-      message: "What is the name the GitHub repository?"
+      name: "email",
+      message: "What is your email address?",
+      validate: function (answer) {
+        if (answer==="") {
+          return 'You must type something!';
+        }
+
+        return true;
+      }
     }
   ]);
 }
 
+function generateShieldURL(answers){
+    // console.log(answers.license)
+    switch(answers.license){
+        case "None": licenseShieldURL=""; break;
+        case "NPM": licenseShieldURL="![NPM](https://img.shields.io/npm/l/inquirer)"; break;
+    }
+    // console.log(licenseShieldURL);
+}
+
+
 function generateReadMe(answers) {
+  
   return `
 # **${answers.name}**
+${licenseShieldURL}
 
-Description:
+#### **Description:**
 
 ${answers.description}
 
-Table of Contents:
+#### **Table of Contents:**
 
--[Installation](Installation)
--[Usage](##Usage)
--[License](##License)
--[Contributors](##Contributors)
--[Tests](##Tests)
--[Contact Information](##Contact Information)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [License](#License)
+- [Contributors](#Contributors)
+- [Tests](#Tests)
+- [Questions](#Questions)
 
-##Installation
+## Installation
 
 ${answers.installation}
 
-##Usage
+## Usage
 
 ${answers.usage}
 
-##License
+## License
 
 ${answers.license}
 
-##Contributors
+## Contributors
 
 ${answers.contributor}
 
-##Tests
+## Tests
 
+${answers.testing}
 
-##Contact Information
+## Questions
 
-For more information please contact Kerem Karaman.
+For more information please contact me using my [email](${answers.email}).
+
+If you liked this, you can find more of my work at my [GitHub profile](https://github.com/${answers.github})
+
+![Commit Day](https://img.shields.io/github/last-commit/KKaraman/readMeGenerator?style=plastic)
 
 `;
 }
 
 async function init() {
-  console.log("hi")
+  console.log("Thank you for using my ReadMe Generator, let's get started!")
   try {
     const answers = await promptUser();
+    generateShieldURL(answers);
 
     const file = generateReadMe(answers);
 

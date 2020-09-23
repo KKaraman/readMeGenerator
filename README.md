@@ -1,10 +1,10 @@
 
-# **fdg**
-![APM](https://img.shields.io/apm/l/dsf)
+# **readMeGenerator**
+![NPM](https://img.shields.io/npm/l/inquirer)
 
 #### **Description:**
 
-fg
+create ReadMe files
 
 #### **Table of Contents:**
 
@@ -17,29 +17,29 @@ fg
 
 ## Installation
 
-fdg
+npm i and then node index.js
 
 ## Usage
 
-afsdg
+generate awesome Readme files for repositories
 
 ## License
 
-MIT
+NPM
 
 ## Contributors
 
-sdf
+Kerem Karaman
 
 ## Tests
 
-sdf
+None
 
 ## Questions
 
-For more information please contact me using my [email](sdf).
+For more information please contact me using my [email](keremukaraman@gmail.com).
 
-If you liked this, you can find more of my work at my [GitHub profile](https://github.com/sdf)
+If you liked this, you can find more of my work at my [GitHub profile](https://github.com/KKaraman)
 
 ![Commit Day](https://img.shields.io/github/last-commit/KKaraman/readMeGenerator?style=plastic)
 
