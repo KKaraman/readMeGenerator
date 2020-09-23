@@ -1,6 +1,6 @@
 
 # **fdg**
-![GitHub](https://img.shields.io/github/license/kkaraman/readMeGenerator)
+![NPM](https://img.shields.io/npm/l/inquirer)
 
 #### **Description:**
 
