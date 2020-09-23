@@ -1,6 +1,6 @@
 
 # **fdg**
-![APM](https://img.shields.io/apm/l/dsf)
+![AUR license](https://img.shields.io/aur/license/sdfd)
 
 #### **Description:**
 
