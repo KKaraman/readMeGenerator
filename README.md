@@ -1,6 +1,6 @@
 
 # **fdg**
-![Hex.pm](https://img.shields.io/hexpm/l/gdfh)
+![GitHub last commit](https://img.shields.io/github/last-commit/KKaraman/readMeGenerator?style=plastic)
 
 #### **Description:**
 
