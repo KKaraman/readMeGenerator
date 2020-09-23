@@ -1,9 +1,10 @@
 
-# **readMeGenerator**
+# **fdg**
+![APM](https://img.shields.io/apm/l/dsf)
 
 #### **Description:**
 
-it makes awesome readme files
+fg
 
 #### **Table of Contents:**
 
@@ -16,28 +17,29 @@ it makes awesome readme files
 
 ## Installation
 
-run "node index.js" at the terminal
+fdg
 
 ## Usage
 
-to create a readme file for every repository that you create
+afsdg
 
 ## License
 
-none
+MIT
 
 ## Contributors
 
-none
+sdf
 
 ## Tests
 
+sdf
 
 ## Questions
 
-For more information please contact me at [mailto](keremukaraman@gmail.com).
+For more information please contact me using my [email](sdf).
 
-You can visit my GitHub profile at [GitHub](https://github.com/KKaraman)
+If you liked this, you can find more of my work at my [GitHub profile](https://github.com/sdf)
 
 ![Commit Day](https://img.shields.io/github/last-commit/KKaraman/readMeGenerator?style=plastic)
 
