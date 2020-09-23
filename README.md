@@ -58,11 +58,16 @@ None at this moment.
 
 ## Questions
 
-For more information please contact me using my [email](keremukaraman@gmail.com).("\n")
-The link for the readMeGenerator repo can be found [here](https://github.com/KKaraman/readMeGenerator).
-The link for the readMeGenerator video can be found [here](https://github.com/KKaraman/readMeGenerator/blob/master/KK_09NodeJS_HW.webm)
-A readMeGenerator generated readme file can be found [here](https://github.com/KKaraman/readMeGenerator/blob/master/README_node_generated.md)
-If you liked this, you can see my other repositories at my [GitHub profile](https://github.com/KKaraman)
+For more information please contact me using my [email](keremukaraman@gmail.com).
 
-![Commit Day](https://img.shields.io/github/last-commit/KKaraman/readMeGenerator?style=plastic)
+The link for the readMeGenerator repo can be found [here](https://github.com/KKaraman/readMeGenerator).
+
+The link for the readMeGenerator video can be found [here](https://github.com/KKaraman/readMeGenerator/blob/master/KK_09NodeJS_HW.webm).
+
+A readMeGenerator generated readme file can be found [here](https://github.com/KKaraman/readMeGenerator/blob/master/README_node_generated.md).
+
+If you liked this, you can see my other repositories at my [GitHub profile](https://github.com/KKaraman).
+
+
+![Commit Day](https://img.shields.io/github/last-commit/KKaraman/readMeGenerator?style=plastic).
 
